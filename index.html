@@ -1,385 +1,117 @@
 <html>
     <head>
         <title>HTML Examples</title>
+
+        <script>
+            function examplesList(topic, numberExamples) {
+                var txt = "";
+                txt +=  '<h2>' + topic + '</h2>\n' + 
+                        '<details>\n' + 
+                            '<summary>Examples</summary>\n';
+
+                for (var i = 1; i <= numberExamples; i++) {
+                    txt += '<li type="square"><a href="./' + topic.replace(/\s/g, "") + '/Example_' + i + '.html">Example'+ i + '</a></li>\n';
+                }
+
+                txt += '</details>\n';
+                document.getElementById(topic).innerHTML = txt;
+            }
+        </script>          
     </head>
     <body>  
-        <h1><center>HTML Examples</Center></h1>
+        <h1 style="text-align: center;">HTML Examples</h1>
 
-        <h2>HTML Basic</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./HTMLBasic/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./HTMLBasic/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./HTMLBasic/Example_3.html">Example 3</a></li>  
-            <li type="square"><a href="./HTMLBasic/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./HTMLBasic/Example_5.html">Example 5</a></li>    
-            <li type="square"><a href="./HTMLBasic/Example_6.html">Example 6</a></li>    
-            <li type="square"><a href="./HTMLBasic/Example_7.html">Example 7</a></li> 
-        </details>
+        <p id="HTML Basic"></p>
+        <script>examplesList('HTML Basic', 7);</script>
 
-        <h2>HTML Attributes</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./HTMLAttributes/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./HTMLAttributes/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./HTMLAttributes/Example_3.html">Example 3</a></li>  
-            <li type="square"><a href="./HTMLAttributes/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./HTMLAttributes/Example_5.html">Example 5</a></li>    
-            <li type="square"><a href="./HTMLAttributes/Example_6.html">Example 6</a></li>  
-        </details>
+        <p id="HTML Attributes"></p>
+        <script>examplesList('HTML Attributes', 6);</script>
 
-        <h2>HTML Headings</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./HTMLHeadings/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./HTMLHeadings/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./HTMLHeadings/Example_3.html">Example 3</a></li>  
-        </details>
+        <p id="HTML Headings"></p>
+        <script>examplesList('HTML Headings', 3);</script>
 
-        <h2>HTML Paragraphs</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./HTMLParagraphs/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./HTMLParagraphs/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./HTMLParagraphs/Example_3.html">Example 3</a></li>  
-            <li type="square"><a href="./HTMLParagraphs/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./HTMLParagraphs/Example_5.html">Example 5</a></li> 
-        </details>
+        <p id="HTML Paragraphs"></p>
+        <script>examplesList('HTML Paragraphs', 5);</script>
 
-        <h2>HTML Styles</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./HTMLStyles/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./HTMLStyles/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./HTMLStyles/Example_3.html">Example 3</a></li>  
-            <li type="square"><a href="./HTMLStyles/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./HTMLStyles/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./HTMLStyles/Example_6.html">Example 6</a></li>  
-        </details>
+        <p id="HTML Styles"></p>
+        <script>examplesList('HTML Styles', 6);</script>
 
-        <h2>HTML Text Formatting</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./HTMLTextFormatting/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./HTMLTextFormatting/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./HTMLTextFormatting/Example_3.html">Example 3</a></li>  
-            <li type="square"><a href="./HTMLTextFormatting/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./HTMLTextFormatting/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./HTMLTextFormatting/Example_6.html">Example 6</a></li>  
-            <li type="square"><a href="./HTMLTextFormatting/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./HTMLTextFormatting/Example_8.html">Example 8</a></li>
-            <li type="square"><a href="./HTMLTextFormatting/Example_9.html">Example 9</a></li>  
-            <li type="square"><a href="./HTMLTextFormatting/Example_10.html">Example 10</a></li>
-            <li type="square"><a href="./HTMLTextFormatting/Example_11.html">Example 11</a></li>
-        </details>
+        <p id="HTML Text Formatting"></p>
+        <script>examplesList('HTML Text Formatting', 11);</script>
 
-        <h2>HTML Quotations and Citations</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./HTMLQuotationsAndCitations/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./HTMLQuotationsAndCitations/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./HTMLQuotationsAndCitations/Example_3.html">Example 3</a></li>  
-            <li type="square"><a href="./HTMLQuotationsAndCitations/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./HTMLQuotationsAndCitations/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./HTMLQuotationsAndCitations/Example_6.html">Example 6</a></li>  
-        </details>
+        <p id="HTML Quotations And Citations"></p>
+        <script>examplesList('HTML Quotations And Citations', 6);</script>
 
-        <h2>HTML Comments</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./HTMLComments/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./HTMLComments/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./HTMLComments/Example_3.html">Example 3</a></li>  
-        </details>
+        <p id="HTML Comments"></p>
+        <script>examplesList('HTML Comments', 3);</script>
 
-        <h2>HTML CSS</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./HTMLCSS/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./HTMLCSS/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./HTMLCSS/Example_3.html">Example 3</a></li>  
-            <li type="square"><a href="./HTMLCSS/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./HTMLCSS/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./HTMLCSS/Example_6.html">Example 6</a></li>  
-            <li type="square"><a href="./HTMLCSS/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./HTMLCSS/Example_8.html">Example 8</a></li>
-            <li type="square"><a href="./HTMLCSS/Example_9.html">Example 9</a></li>  
-            <li type="square"><a href="./HTMLCSS/Example_10.html">Example 10</a></li>
-            <li type="square"><a href="./HTMLCSS/Example_11.html">Example 11</a></li>
-        </details>
+        <p id="HTML CSS"></p>
+        <script>examplesList('HTML CSS', 11);</script>
 
-        <h2>HTML Links</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./HTMLLinks/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./HTMLLinks/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./HTMLLinks/Example_3.html">Example 3</a></li>  
-            <li type="square"><a href="./HTMLLinks/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./HTMLLinks/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./HTMLLinks/Example_6.html">Example 6</a></li>  
-            <li type="square"><a href="./HTMLLinks/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./HTMLLinks/Example_8.html">Example 8</a></li>
-            <li type="square"><a href="./HTMLLinks/Example_9.html">Example 9</a></li>  
-            <li type="square"><a href="./HTMLLinks/Example_10.html">Example 10</a></li>
-        </details>
+        <p id="HTML Links"></p>
+        <script>examplesList('HTML Links', 10);</script>
 
-        <h2>HTML Images</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./HTMLImages/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./HTMLImages/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./HTMLImages/Example_3.html">Example 3</a></li>  
-            <li type="square"><a href="./HTMLImages/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./HTMLImages/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./HTMLImages/Example_6.html">Example 6</a></li>  
-            <li type="square"><a href="./HTMLImages/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./HTMLImages/Example_8.html">Example 8</a></li>
-            <li type="square"><a href="./HTMLImages/Example_9.html">Example 9</a></li>  
-            <li type="square"><a href="./HTMLImages/Example_10.html">Example 10</a></li>
-            <li type="square"><a href="./HTMLImages/Example_11.html">Example 11</a></li>
-        </details>
+        <p id="HTML Images"></p>
+        <script>examplesList('HTML Images', 11);</script>
 
-        <h2>HTML Tables</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./HTMLTables/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./HTMLTables/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./HTMLTables/Example_3.html">Example 3</a></li>  
-            <li type="square"><a href="./HTMLTables/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./HTMLTables/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./HTMLTables/Example_6.html">Example 6</a></li>  
-            <li type="square"><a href="./HTMLTables/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./HTMLTables/Example_8.html">Example 8</a></li>
-            <li type="square"><a href="./HTMLTables/Example_9.html">Example 9</a></li>  
-            <li type="square"><a href="./HTMLTables/Example_10.html">Example 10</a></li>
-            <li type="square"><a href="./HTMLTables/Example_10.html">Example 10</a></li>
-            <li type="square"><a href="./HTMLTables/Example_11.html">Example 11</a></li>
-            <li type="square"><a href="./HTMLTables/Example_12.html">Example 12</a></li>
-            <li type="square"><a href="./HTMLTables/Example_13.html">Example 13</a></li>  
-            <li type="square"><a href="./HTMLTables/Example_14.html">Example 14</a></li>
-            <li type="square"><a href="./HTMLTables/Example_15.html">Example 15</a></li>
-            <li type="square"><a href="./HTMLTables/Example_16.html">Example 16</a></li>
-        </details>
+        <p id="HTML Tables"></p>
+        <script>examplesList('HTML Tables', 16);</script>
 
-        <h2>HTML Lists</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./HTMLLists/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./HTMLLists/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./HTMLLists/Example_3.html">Example 3</a></li>  
-            <li type="square"><a href="./HTMLLists/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./HTMLLists/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./HTMLLists/Example_6.html">Example 6</a></li>  
-            <li type="square"><a href="./HTMLLists/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./HTMLLists/Example_8.html">Example 8</a></li>
-            <li type="square"><a href="./HTMLLists/Example_9.html">Example 9</a></li>  
-            <li type="square"><a href="./HTMLLists/Example_10.html">Example 10</a></li>
-            <li type="square"><a href="./HTMLLists/Example_10.html">Example 10</a></li>
-            <li type="square"><a href="./HTMLLists/Example_11.html">Example 11</a></li>
-            <li type="square"><a href="./HTMLLists/Example_12.html">Example 12</a></li>
-            <li type="square"><a href="./HTMLLists/Example_13.html">Example 13</a></li>  
-            <li type="square"><a href="./HTMLLists/Example_14.html">Example 14</a></li>
-            <li type="square"><a href="./HTMLLists/Example_15.html">Example 15</a></li>
-            <li type="square"><a href="./HTMLLists/Example_16.html">Example 16</a></li>
-        </details>
+        <p id="HTML Lists"></p>
+        <script>examplesList('HTML Lists', 16);</script>
 
-        <h2>HTML Block and inline elements</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./HTMLBlockAndInlineElements/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./HTMLBlockAndInlineElements/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./HTMLBlockAndInlineElements/Example_3.html">Example 3</a></li>  
-            <li type="square"><a href="./HTMLBlockAndInlineElements/Example_4.html">Example 4</a></li>
-        </details>
+        <p id="HTML Block And Inline Elements"></p>
+        <script>examplesList('HTML Block And Inline Elements', 4);</script>        
 
-        <h2>HTML Classes</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./HTMLClasses/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./HTMLClasses/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./HTMLClasses/Example_3.html">Example 3</a></li>  
-            <li type="square"><a href="./HTMLClasses/Example_4.html">Example 4</a></li>
-        </details>
+        <p id="HTML Classes"></p>
+        <script>examplesList('HTML Classes', 4);</script>  
 
-        <h2>HTML Id</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./HTMLId/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./HTMLId/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./HTMLId/Example_3.html">Example 3</a></li>  
-        </details>
+        <p id="HTML Id"></p>
+        <script>examplesList('HTML Id', 3);</script>          
 
-        <h2>HTML Layout</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./HTMLLayout/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./HTMLLayout/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./HTMLLayout/Example_3.html">Example 3</a></li>  
-            <li type="square"><a href="./HTMLLayout/Example_4.html">Example 4</a></li>
-        </details>
+        <p id="HTML Layout"></p>
+        <script>examplesList('HTML Layout', 4);</script>         
 
-        <h2>HTML IFrame</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./HTMLIFrame/Example_1.html">Example 1</a></li>
-        </details>
+        <p id="HTML IFrame"></p>
+        <script>examplesList('HTML IFrame', 1);</script>     
 
-        <h2>HTML head Elements</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./HTMLHeadElements/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./HTMLHeadElements/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./HTMLHeadElements/Example_3.html">Example 3</a></li>  
-            <li type="square"><a href="./HTMLHeadElements/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./HTMLHeadElements/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./HTMLHeadElements/Example_6.html">Example 6</a></li>  
-            <li type="square"><a href="./HTMLHeadElements/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./HTMLHeadElements/Example_8.html">Example 8</a></li>
-        </details>
+        <p id="HTML Head Elements"></p>
+        <script>examplesList('HTML Head Elements', 8);</script>    
 
-        <h2>HTML Scripts</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./HTMLScripts/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./HTMLScripts/Example_2.html">Example 2</a></li>
-        </details>
+        <p id="HTML Scripts"></p>
+        <script>examplesList('HTML Scripts', 2);</script>   
 
-        <h2>HTML Computercode Elements</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./HTMLComputercodeElements/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./HTMLComputercodeElements/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./HTMLComputercodeElements/Example_3.html">Example 3</a></li>  
-            <li type="square"><a href="./HTMLComputercodeElements/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./HTMLComputercodeElements/Example_5.html">Example 5</a></li>
-        </details>
+        <p id="HTML Computercode Elements"></p>
+        <script>examplesList('HTML Computercode Elements', 5);</script>         
 
-        <h2>HTML Forms</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./HTMLForms/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./HTMLForms/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./HTMLForms/Example_3.html">Example 3</a></li>  
-            <li type="square"><a href="./HTMLForms/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./HTMLForms/Example_5.html">Example 5</a></li>
-        </details>
+        <p id="HTML Forms"></p>
+        <script>examplesList('HTML Forms', 5);</script>  
 
-        <h2>HTML Form Elements</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./HTMLFormElements/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./HTMLFormElements/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./HTMLFormElements/Example_3.html">Example 3</a></li>  
-            <li type="square"><a href="./HTMLFormElements/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./HTMLFormElements/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./HTMLFormElements/Example_6.html">Example 6</a></li>
-        </details>
+        <p id="HTML Form Elements"></p>
+        <script>examplesList('HTML Form Elements', 6);</script>  
 
-        <h2>HTML Input Types</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./HTMLInputTypes/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./HTMLInputTypes/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./HTMLInputTypes/Example_3.html">Example 3</a></li>  
-            <li type="square"><a href="./HTMLInputTypes/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./HTMLInputTypes/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./HTMLInputTypes/Example_6.html">Example 6</a></li>  
-            <li type="square"><a href="./HTMLInputTypes/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./HTMLInputTypes/Example_8.html">Example 8</a></li>
-            <li type="square"><a href="./HTMLInputTypes/Example_9.html">Example 9</a></li>  
-            <li type="square"><a href="./HTMLInputTypes/Example_10.html">Example 10</a></li>
-            <li type="square"><a href="./HTMLInputTypes/Example_10.html">Example 10</a></li>
-            <li type="square"><a href="./HTMLInputTypes/Example_11.html">Example 11</a></li>
-            <li type="square"><a href="./HTMLInputTypes/Example_12.html">Example 12</a></li>
-            <li type="square"><a href="./HTMLInputTypes/Example_13.html">Example 13</a></li>  
-            <li type="square"><a href="./HTMLInputTypes/Example_14.html">Example 14</a></li>
-            <li type="square"><a href="./HTMLInputTypes/Example_15.html">Example 15</a></li>
-            <li type="square"><a href="./HTMLInputTypes/Example_16.html">Example 16</a></li>
-            <li type="square"><a href="./HTMLInputTypes/Example_17.html">Example 17</a></li>  
-            <li type="square"><a href="./HTMLInputTypes/Example_18.html">Example 18</a></li>
-            <li type="square"><a href="./HTMLInputTypes/Example_19.html">Example 19</a></li>
-            <li type="square"><a href="./HTMLInputTypes/Example_20.html">Example 20</a></li>
-        </details>
+        <p id="HTML Input Types"></p>
+        <script>examplesList('HTML Input Types', 20);</script>  
 
-        <h2>HTML Input Attributes</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./HTMLInputAttributes/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./HTMLInputAttributes/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./HTMLInputAttributes/Example_3.html">Example 3</a></li>  
-            <li type="square"><a href="./HTMLInputAttributes/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./HTMLInputAttributes/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./HTMLInputAttributes/Example_6.html">Example 6</a></li>  
-            <li type="square"><a href="./HTMLInputAttributes/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./HTMLInputAttributes/Example_8.html">Example 8</a></li>
-            <li type="square"><a href="./HTMLInputAttributes/Example_9.html">Example 9</a></li>  
-            <li type="square"><a href="./HTMLInputAttributes/Example_10.html">Example 10</a></li>
-            <li type="square"><a href="./HTMLInputAttributes/Example_10.html">Example 10</a></li>
-            <li type="square"><a href="./HTMLInputAttributes/Example_11.html">Example 11</a></li>
-            <li type="square"><a href="./HTMLInputAttributes/Example_12.html">Example 12</a></li>
-            <li type="square"><a href="./HTMLInputAttributes/Example_13.html">Example 13</a></li>  
-            <li type="square"><a href="./HTMLInputAttributes/Example_14.html">Example 14</a></li>
-            <li type="square"><a href="./HTMLInputAttributes/Example_15.html">Example 15</a></li>
-            <li type="square"><a href="./HTMLInputAttributes/Example_16.html">Example 16</a></li>
-            <li type="square"><a href="./HTMLInputAttributes/Example_17.html">Example 17</a></li>  
-        </details>
+        <p id="HTML Input Attributes"></p>
+        <script>examplesList('HTML Input Attributes', 17);</script>  
 
-        <h2>HTML Canvas Graphics</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./HTMLCanvasGraphics/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./HTMLCanvasGraphics/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./HTMLCanvasGraphics/Example_3.html">Example 3</a></li>  
-            <li type="square"><a href="./HTMLCanvasGraphics/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./HTMLCanvasGraphics/Example_5.html">Example 5</a></li>
-            <li type="square"><a href="./HTMLCanvasGraphics/Example_6.html">Example 6</a></li>  
-            <li type="square"><a href="./HTMLCanvasGraphics/Example_7.html">Example 7</a></li>
-            <li type="square"><a href="./HTMLCanvasGraphics/Example_8.html">Example 8</a></li>
-            <li type="square"><a href="./HTMLCanvasGraphics/Example_9.html">Example 9</a></li>  
-        </details>
+        <p id="HTML Canvas Graphics"></p>
+        <script>examplesList('HTML Canvas Graphics', 9);</script> 
 
-        <h2>HTML SVG Graphics</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./HTMLSVGGraphics/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./HTMLSVGGraphics/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./HTMLSVGGraphics/Example_3.html">Example 3</a></li>  
-            <li type="square"><a href="./HTMLSVGGraphics/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./HTMLSVGGraphics/Example_5.html">Example 5</a></li>
-        </details>
+        <p id="HTML SVG Graphics"></p>
+        <script>examplesList('HTML SVG Graphics', 5);</script> 
 
-        <h2>HTML Media</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./HTMLMedia/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./HTMLMedia/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./HTMLMedia/Example_3.html">Example 3</a></li>  
-            <li type="square"><a href="./HTMLMedia/Example_4.html">Example 4</a></li>
-            <li type="square"><a href="./HTMLMedia/Example_5.html">Example 5</a></li>
-        </details>
+        <p id="HTML Media"></p>
+        <script>examplesList('HTML Media', 5);</script> 
 
-        <h2>HTML Geolocation</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./HTMLGeolocation/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./HTMLGeolocation/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./HTMLGeolocation/Example_3.html">Example 3</a></li>  
-        </details>
+        <p id="HTML Geolocation"></p>
+        <script>examplesList('HTML Geolocation', 3);</script> 
 
-        <h2>HTML Local Storage</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./HTMLLocalStorage/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./HTMLLocalStorage/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./HTMLLocalStorage/Example_3.html">Example 3</a></li>  
-        </details>    
+        <p id="HTML Local Storage"></p>
+        <script>examplesList('HTML Local Storage', 3);</script> 
         
-        <h2>More HTML Examples</h2>
-        <details>
-            <summary>Examples</summary>
-            <li type="square"><a href="./MoreHTMLExamples/Example_1.html">Example 1</a></li>
-            <li type="square"><a href="./MoreHTMLExamples/Example_2.html">Example 2</a></li>
-            <li type="square"><a href="./MoreHTMLExamples/Example_3.html">Example 3</a></li>  
-        </details>  
+        <p id="More HTML Examples"></p>
+        <script>examplesList('More HTML Examples', 3);</script> 
     </body> 
 </html>
